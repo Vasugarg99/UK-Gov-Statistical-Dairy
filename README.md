@@ -9,9 +9,13 @@ This project aims at building a unified platform for the citizens to access webs
 *Product Description:*
 Deliverables-An Integrated Information System for accessing  information ,reports and visual statistics  of various departments working under Govt.Of Uttrakhand 
 Project Objectives	
+
 1.To develop  single  efficient platform  based on Integrated Information System for all stakeholders to access website links of various departments working under Govt.of Uttarakhand 
+
 2.To facilitate  different departments  to upload monthly reports on this unified platform
+
 3.To enable  stakeholders to view or  download monthly reports on this platform
+
 4.To provide stakeholders with visual statistics of data on the dashboard .
 
 *Business Case:*	
