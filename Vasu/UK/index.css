@@ -1,0 +1,169 @@
+*{
+  margin: 0px;
+  padding: 0px
+}
+#topBar1,
+{
+  font-size: 14px
+  
+}
+#topBar1 
+{
+  border-bottom: 1px solid #e2e2e1
+  
+}
+#topBar1 .govBranding ul li {
+	display: inline-block
+}
+#topBar1 .govBranding ul li a {
+	display: block;
+	font-size: 0.80em;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 8px;
+	color: #000	
+}
+#topBar1 .govBranding ul li:first-child
+{
+	border-right: 1px solid #e2e2e1
+}
+
+.logo {
+	float: left;
+	font-size: 160%;
+	line-height: 105%;
+	min-height: 103px;
+	padding: 50px 0 0 95px;
+	text-transform: uppercase;
+	position: relative
+	
+}
+.logo .emblem {
+	position: absolute;
+  left: 30px;
+  padding: 2px;
+	top: 10px
+}
+
+.sw-logo 
+{
+	display: inline-block
+}
+.sw-logo img 
+{
+    margin-top: 10px
+}
+@media (max-width: 640px) {
+	.float-element {
+		display: none
+	}
+	.logo {
+		float: none;
+		font-size: 150%
+	}
+}
+#navbar{
+	text-align: left;
+	position: relative;
+   background:#0a5472;
+	transition: top 0.3s;
+}
+#navbar li{
+    display: inline-block;
+    list-style: none;
+}
+#navbar a {
+	float: left;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 13px 18px;
+	text-decoration: none;
+	font-size: 12px;
+  }
+#navbar a:hover {
+	background-color: rgb(14, 158, 122);
+	color: rgb(255, 255, 255);
+}
+  
+#navbar a.active {
+	background-color: rgb(14, 158, 122);
+  	color: white;
+}
+.topnav-right {
+  float: right;
+}
+li {
+	
+  }
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: static;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.list-group-item > a
+{
+	text-decoration: none;
+	color: #000;
+	padding: 10px;
+	font-size: 15px;
+}
+#footers
+{
+	background-color: #000;
+  	color: #e2e2e1;
+	clear: both;
+	display: block;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid rgb(201, 199, 199);
+}
