@@ -40,26 +40,22 @@
             <nav id="navbar">
                 <ul>
                     <li><a>  </a></li>
-                    <li><a class="active" href="index.html">HOME</a></li>
-                    <li><a href=" ">ABOUT</a></li>
-                    <li><a href="department.html">DEPARTMENTS</a></li>
-                    <li><a href="directorates.html">DIRECTORATES</a></li>
-                    <li><a href="organizations.html">ORGANIZATION</a></li>
-                    <li><a href=" ">REPORTS</a></li>
-                    <li><a href=" ">CONTACT US</a></li>
-                    <li><a href=" ">FEEDBACK</a></li>
-                    <div class="topnav-right">
-                        <li><a>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href=" ">About</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="directorates.html">Directorates</a></li>
+                    <li><a href="organizations.html">Organization</a></li>
+                    <li><a href=" ">Reports</a></li>
+                    <li><a href=" ">Contact Us</a></li>
+                    <li><a href=" ">Feedback</a></li>
+                    <div class="topnav-right" >
+                       <!-- <li><a style="padding: 0px;">
                             <form class="form-inline pull-xs-right">
                                 <input class="form-control" type="text" placeholder="Search">
                                 <button class="btn btn-secondary" type="submit">Search</button>
                             </form>
-                        </a></li>
-                        <li><a href="">SIGN IN</a>
-                            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                             <a class="dropdown-item" href=" ">Sign In</a>
-                             <a class="dropdown-item" href=" ">Sign Up</a>
-                             </div>-->
+                        </a></li>-->
+                        <li><a style="padding: 0px;"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
                         </li>
                     </div>
                 </ul> 
@@ -67,6 +63,35 @@
             </section>
             </header>
         
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+              
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/action_page.php">
+                  
+                  <div class="container">
+                    <br><br>
+                    <label for="uname"><b>Username: </b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br><br>
+                    <label for="psw"><b>Password: </b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br><br>
+                    <button type="submit"> Login </button>
+                    <br><br>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+
             <section style="border-bottom: 1px solid rgba(207, 207, 207, 0.863);" >
             <!-- Slideshow container -->
             <div class="slideshow-container">

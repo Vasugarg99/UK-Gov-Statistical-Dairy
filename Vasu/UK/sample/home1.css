@@ -1,0 +1,147 @@
+#topBar1,
+{
+	font-size: 14px
+}
+#topBar1 {
+	border-bottom: 1px solid #e2e2e1
+}
+#topBar1 .govBranding ul li {
+	display: inline-block
+}
+#topBar1 .govBranding ul li a {
+	display: block;
+	font-size: 0.78em;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0px 10px;
+	color: #000
+}
+#topBar1 .govBranding ul li:first-child {
+	border-right: 1px solid #e2e2e1
+}
+
+.logo {
+	float: left;
+	font-size: 160%;
+	line-height: 105%;
+	min-height: 103px;
+	padding: 14px 0 0 85px;
+	text-transform: uppercase;
+	position: relative
+	
+}
+.logo .emblem {
+	position: absolute;
+	left: 30px;
+	top: 10px
+}
+
+.sw-logo {
+	display: inline-block
+}
+.sw-logo img {
+    margin-top: 10px
+    }
+@media (max-width: 640px) {
+	.float-element {
+		display: none
+	}
+	.logo {
+		float: none;
+		font-size: 150%
+	}
+}
+#navbar{
+	text-align: left;
+	position: relative;
+    background:#e9e9e9;
+	transition: top 0.3s;
+}
+#navbar li{
+    display: inline-block;
+    list-style: none;
+}
+#navbar a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+  }
+#navbar a:hover {
+	background-color: #ddd;
+  	color: black;
+}
+  
+#navbar a.active {
+	background-color: #2196F3;
+  	color: white;
+}
+.topnav-right {
+  float: right;
+}
+li {
+	border-right: 1px solid #bbb;
+  }
+  .dropdown {
+	float: right;
+	overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+
+	
+	
+	margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 0;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .dropdown:hover .dropbtn {
+	background-color: #555;
+	color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+
+  #footers{
+	clear: both;
+	display: block;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid black;
+}
