@@ -37,35 +37,60 @@
             </section>
             <br><br><br><br><br><br><br><br>
             <section id="Nav">
-            <nav id="navbar">
-                <ul>
-                    <li><a>  </a></li>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href=" ">ABOUT</a></li>
-                    <li><a href="department.html">DEPARTMENTS</a></li>
-                    <li><a class="active" href="directorates.html">DIRECTORATES</a></li>
-                    <li><a href="organizations.html">ORGANIZATION</a></li>
-                    <li><a href=" ">REPORTS</a></li>
-                    <li><a href=" ">CONTACT US</a></li>
-                    <li><a href=" ">FEEDBACK</a></li>
-                    <div class="topnav-right">
-                        <li><a>
-                            <form class="form-inline pull-xs-right">
-                                <input class="form-control" type="text" placeholder="Search">
-                                <button class="btn btn-secondary" type="submit">Search</button>
-                            </form>
-                        </a></li>
-                        <li><a href="">SIGN IN</a>
-                            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                             <a class="dropdown-item" href=" ">Sign In</a>
-                             <a class="dropdown-item" href=" ">Sign Up</a>
-                             </div>-->
-                        </li>
-                    </div>
-                </ul> 
-            </nav>
-            </section>
-            </header>
+                <nav id="navbar">
+                    <ul>
+                        <li><a>  </a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href=" ">About</a></li>
+                        <li><a href="department.html">Departments</a></li>
+                        <li><a class="active" href="directorates.html">Directorates</a></li>
+                        <li><a href="organizations.html">Organization</a></li>
+                        <li><a href=" ">Reports</a></li>
+                        <li><a href=" ">Contact Us</a></li>
+                        <li><a href=" ">Feedback</a></li>
+                        <div class="topnav-right" >
+                           <!-- <li><a style="padding: 0px;">
+                                <form class="form-inline pull-xs-right">
+                                    <input class="form-control" type="text" placeholder="Search">
+                                    <button class="btn btn-secondary" type="submit">Search</button>
+                                </form>
+                            </a></li>-->
+                            <li><a style="padding: 0px;"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
+                            </li>
+                        </div>
+                    </ul> 
+                </nav>
+                </section>
+                </header>
+            
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                  class="close" title="Close Modal">&times;</span>
+                  
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" action="/action_page.php">
+                      
+                      <div class="container">
+                        <br><br>
+                        <label for="uname"><b>Username: </b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <br><br>
+                        <label for="psw"><b>Password: </b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br><br>
+                        <button type="submit"> Login </button>
+                        <br><br>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
         
             <section style="border-bottom: 1px solid rgba(207, 207, 207, 0.863);" >
             <!-- Slideshow container -->
@@ -140,16 +165,16 @@
 					</marquee>
             </div>
             
-            <section style="padding:20px; margin-left:280px; margin-right:300px;text-align:justify;">
+            <section style="padding:20px; margin-left:290px; margin-right:300px;text-align:justify;">
             <h3><span style="color:#920B0B;">Directorates</span></h3><br>
-            <ol class="list-group">
+            <ol class="list-group" style="font-size: 10px;">
                 <br><li class="list-group-item"><a href="http://directorateheuk.org/" target="_blank">Directorate Of Higher Education</a></li>
                 <br><li class="list-group-item"><a href="https://www.doiuk.org/" target="_blank">Directorate Of Industries</a></li>
                 <br><li class="list-group-item"><a href="http://des.uk.gov.in/" target="_blank">Directorate Of Economics and Statistics</a></li>
                 <br><li class="list-group-item"><a href="http://nccdte.uk.gov.in/" target="_blank">NCC Directorate</a></li>
                 <br><li class="list-group-item"><a href="http://ekosh.uk.gov.in/" target="_blank">Treasuries CTS/e-kosh</a></li>
                 <br><li class="list-group-item"><a href="http://udd.uk.gov.in/" target="_blank">Urban Development</a></li>
-                <br><li class="list-group-item"><a href="http://wmduk.gov.in/" target="_blank">Waterhsed Management Directorate</a></li>
+                <br><li class="list-group-item"><a href="http://wmduk.gov.in/" target="_blank">Watershed Management Directorate</a></li>
             </ol>
             </section>
 
