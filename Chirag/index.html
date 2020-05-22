@@ -193,11 +193,11 @@
         function myFunction() {
           if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
               console.log(document.body.scrollTop)
-            document.getElementById("mainLogo").className = "main-logo-2";
-            document.getElementById("navbarList").className = "navbar-list-2";
+            document.getElementById("mainLogo").classList.add("main-logo-2");
+            document.getElementById("navbarList").classList.add("navbar-list-2");
           } else {
-            document.getElementById("mainLogo").className = "main-logo";
-            document.getElementById("navbarList").className = "navbar-list";
+            document.getElementById("mainLogo").classList.remove("main-logo-2");
+            document.getElementById("navbarList").classList.remove("navbar-list-2");
           }
         }
         function hamburgerMenuShowFunction() {

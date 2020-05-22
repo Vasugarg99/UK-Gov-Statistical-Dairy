@@ -370,14 +370,17 @@ body
         /* border: 1px solid black; */
         display: fixed;
         /* display: none; */
+		transition: .5s;
     }
     .main-logo
     {
-    display: inline-block;
-    position: fixed;
-    margin-left: 3vw;
-    height: 8vw;
-    width: 8vw;
+		display: inline-block;
+		position: fixed;
+		margin-left: 3vw;
+		height: 8vw;
+		width: 8vw;
+		transition: .5s;
+		transition-timing-function: ease;
     }
     .hamburger-menu
     {
@@ -385,10 +388,8 @@ body
     }
     .main-logo-2
     {
-        position: fixed;
-        top: 1.5vw;
-        left: 3vw;
-        height: 3vw;
+        height: 5vw;
+		width: 5vw;
     }
     .navbar-list
     {
@@ -400,6 +401,8 @@ body
         top: 3vw;
         right: 3vw;
         border-bottom: 2px solid rgb(80, 106, 221);
+		transition: .5s;
+		transition-timing-function: ease;
     }
     .navbar-list-2
     {
