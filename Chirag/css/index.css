@@ -20,7 +20,7 @@ body
     .main-heading-english
     {
         margin: 0;
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
     }
     .heading-hr
@@ -29,13 +29,13 @@ body
         margin-left: auto;
         margin-right: auto;
         width: 40vw;
-        border: 1px solid rgb(80, 106, 221);
+        border: 1px solid #1E90FF;
     }
     .main-heading-hindi
     {
         margin: 0;
         text-align: center;
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .individual-state-name
     {
@@ -85,7 +85,7 @@ body
     }
     .nav-bar
     {
-        background-color: rgb(80, 106, 221);
+        background-color: #1E90FF;
         border: 1px solid black;
         display: fixed;
     }
@@ -131,7 +131,7 @@ body
         margin-bottom: 0;
         bottom: 7vw;
         right: 3vw;
-        border-bottom: 2px solid rgb(80, 106, 221);
+        border-bottom: 2px solid #1E90FF;
         animation-timing-function: linear;
         animation-name: navbarShowIn;
         animation-duration: 1s;
@@ -155,7 +155,7 @@ body
         margin-bottom: 0;
         bottom: 7vw;
         right: 3vw;
-        border-bottom: 2px solid rgb(80, 106, 221);
+        border-bottom: 2px solid #1E90FF;
         animation-timing-function: linear;
         animation-name: navbarShowIn;
         animation-duration: 2s;
@@ -183,7 +183,7 @@ body
     }
     .navbar-link:hover
     {
-        background-color: rgb(80, 106, 221);
+        background-color:#1E90FF;
         color: white;
     }
     /* MIDSECTION */
@@ -200,7 +200,7 @@ body
         box-shadow: 0px 3px 16px  black;
         margin-left: auto;
         margin-right: auto;
-        color: rgb(80, 106, 221);
+        color: #1E90FF;
     }
     .main-intro
     {
@@ -210,7 +210,7 @@ body
     .main-intro-heading
     {
         margin-top: 10vw;
-        color: rgb(80, 106, 221);
+        color: #1E90FF;
         border-bottom: 1px solid grey;
         box-shadow: 1px 1px 10px  black;
         display: block;
@@ -230,7 +230,7 @@ body
         display: block;
         width: 70%;
         border-bottom: 1px solid grey;
-        color: rgb(80, 106, 221);
+        color:#1E90FF;
         box-shadow: 0px 3px 16px  black;
         margin-left: auto;
         margin-right: auto;
@@ -255,7 +255,7 @@ body
     /* FOOTER */
     .footer
     {
-        background-color: rgb(80, 106, 221);
+        background-color: black;
         padding: 3vw; 
     }
     .copyright-claim
@@ -289,27 +289,27 @@ body
     .main-heading-english{
         margin: 0;
         position: relative;
-        top: 3vw;
+        top: 4vw;
         /* left: 3vw; */
-        font-size: 2vw;
+        font-size: 3vw;
         text-align: center;
     }
     .heading-hr
     {
         margin: 0;
         position: relative;
-        top: 3vw;
+        top: 4vw;
         margin-left: auto;
         margin-right: auto;
         width: 15vw;
-        border: 0.5px solid rgb(80, 106, 221);
+        border: 0.5px solid #00008b;
     }
     .main-heading-hindi{
         margin: 0;
         position: relative;
-        top: 3vw;
+        top: 4vw;
         left: 0;
-        font-size: 1.7vw;
+        font-size: 2vw;
         text-align: center;
     }
     .scroll-images
@@ -326,10 +326,11 @@ body
         position: relative;
         /* display: block; */
         /* border: 1px solid blue; */
-        top: 3vw;
+        top: 5vw;
         left: 0;
-        font-size: 1.7vw;
+        font-size: 2vw;
         text-align: center;
+        opacity: 0.2;
     }
     .individual-state-link
     {
@@ -340,9 +341,9 @@ body
         margin: 0;
         position: relative;
         /* border: 1px solid red; */
-        top: 1.05vw;
+        top: 2.8vw;
         left: 0;
-        font-size: 1.7vw;
+        font-size: 2vw;
         text-align: center;
 
     }
@@ -400,7 +401,7 @@ body
         padding-right: 1.5vw;
         top: 3vw;
         right: 3vw;
-        border-bottom: 2px solid rgb(80, 106, 221);
+        border-bottom: 2px solid #00008b;
 		transition: .5s;
 		transition-timing-function: ease;
     }
@@ -413,7 +414,7 @@ body
         padding-right: 1.5vw;
         top: 1vw;
         right: 3vw;
-        border-bottom: 2px solid rgb(80, 106, 221);
+        border-bottom: 2px solid #00008b;
     }
     .navbar-list-items
     {
@@ -432,8 +433,9 @@ body
     }
     .navbar-link:hover
     {
-        background-color: rgb(80, 106, 221);
+        background-color: #00008b;
         color: white;
+        padding-top: 5px;
     }
     /* MIDSECTION */
 
@@ -441,12 +443,11 @@ body
     {
         display: inline-block;
         padding: 15px;
-        width: 20%;
+        width: 19%;
     }
     .card-title
     {
-        padding-bottom: 10px;
-        color: rgb(80, 106, 221);
+        color: #00008b;
     }
     .district-map
     {
@@ -457,22 +458,25 @@ body
     .main-intro-heading
     {
         text-align: center;
-        color: rgb(80, 106, 221);
+        color: #00008b;
     }
     .main-intro
     {
         display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
         width: 55%;
     }
     .card-title-news
     {
-        color: rgb(80, 106, 221);
+        color: #00008b;
     }
     .news-section
     {
         display: inline-block;
         margin-left: 1vw;
-        width: 20%;
+        width: 19%;
     }
 
     .scrolling-feed
@@ -495,7 +499,7 @@ body
     /* FOOTER */
     .footer
     {
-        background-color: rgb(80, 106, 221);
+        background-color:black;
         padding: 3vw;
     }
     .copyright-claim
@@ -586,8 +590,8 @@ body
 	text-align: center;
 }
 .cm-name{
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	display:flex;
 	justify-content:space-around;
 }
