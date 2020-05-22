@@ -108,14 +108,24 @@ body
 		object-position: top;
 	}
 	.txtname{
-		color:gray;
-		font-size: 3vw;
+		margin:0;
+		font-size: 3.5vw;
 		text-align: center;
 	}
+	.txtname a{
+		text-decoration:none;
+		color:#017dbb;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform:uppercase;
+	}
 	.cm-name{
-		padding-bottom: 10px;
+		padding-bottom: 17px;
 		display:flex;
 		justify-content:space-evenly;
+	}
+	.cm-name img{
+		padding-bottom: 10px;
 	}
     .hamburger-menu
     {
@@ -410,15 +420,30 @@ body
 		object-position: top;
 	}
 	.txtname{
-		color:gray;
-		font-size: .75vw;
+		margin:0;
+		font-size: 15px;
 		text-align: center;
+		text-decoration:none;
+	}
+	.txtname a{
+		text-decoration:none;
+		color:#017dbb;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform:uppercase;
+	}
+	.txtname a:hover{
+		color:#1D2951;
 	}
 	.cm-name{
 		padding-top: 25px;
 		padding-bottom: 25px;
 		display:flex;
+		text-align:center;
 		justify-content:space-around;
+	}
+	.cm-name img{
+		padding-bottom: 10px;
 	}
     .navbar-list
     {
