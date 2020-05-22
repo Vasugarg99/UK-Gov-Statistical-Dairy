@@ -573,4 +573,18 @@ body
     border-radius: 1vw;
     background-color: rgb(122, 180, 231);
 }
-
+.longimg{
+	object-fit: cover;
+	object-position: top;
+}
+.txtname{
+	color:gray;
+	font-size: .75vw;
+	text-align: center;
+}
+.cm-name{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display:flex;
+	justify-content:space-around;
+}
