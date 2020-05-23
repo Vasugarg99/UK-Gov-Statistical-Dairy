@@ -15,7 +15,7 @@ body
         background-attachment: fixed;
         background-size: 100% 70vw;
         margin: 0;
-        padding-top: 6vw;
+        padding-top: 71px;
     }
     .main-heading-english
     {
@@ -85,6 +85,9 @@ body
     }
     .nav-bar
     {
+		z-index:1;
+		position:fixed;
+		width:99.5%;
         background-color: rgb(80, 106, 221);
         border: 1px solid black;
         display: fixed;
@@ -164,7 +167,7 @@ body
      @keyframes navbarShowIn
      {
          from{height: 0vw}
-         to{height: 15vw}
+         to{height: 27vw}
      }
     .navbar-list-2
     {
@@ -191,7 +194,7 @@ body
         text-align: right;
         color: aliceblue;
         list-style: none;
-        font-size: 2vw;
+        font-size: 3vw;
         font-weight: bolder;
         margin-top: 0.5vw;
         margin-bottom: 0.5vw;
@@ -235,6 +238,7 @@ body
     /* LOGIN BOX WINDOW */
     .login-window
     {
+		z-index:2;
     	display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
     	z-index: 1; /* Sit on top */
@@ -289,6 +293,7 @@ body
     /* The Close Button */
     .close-login-window {
         /* Position it in the top right corner outside of the modal */
+		z-index:2;
     	position: absolute;
     	right: 4.5vw;
         top: 30.5vw;
