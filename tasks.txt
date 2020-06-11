@@ -1,8 +1,0 @@
-1. Register and Login Section
-2. News and Announcement Section
-3. Visitor Count Section
-4. Department List Page
-5. Monthly Report Page
-6. Map image with coordinates for different district and redirecting them on their official jurisdiction webste
-
-Integrate these functionalities with home page which is in the repo
