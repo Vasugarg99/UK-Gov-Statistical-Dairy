@@ -6,6 +6,7 @@
     <title>Agriculture Entry Form</title>
     <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
     <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
@@ -37,6 +38,89 @@
 
     <!-- MIDSECTION -->
     <div class="midsection">
+	<div class="container">
+      <h2>Select Table</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="sugarcane-in-district"
+              name="category"
+            />
+            <label for="sugarcane-in-district">Sugarcane in district</label>
+			<form action="/sugarcane-in-district" id="sugarcane-in-district" method="POST" class="input-form">
+				<h1 class="heading">Sugarcane in District:</h1>
+				<label for="loc_category" class="input-labels"><b>Location Category:</b></label>
+				<input type="number"  name="loc_category" class="input-fields" readonly>
+				
+				<label for="loc_id" class="input-labels"><b>Location Id:</b></label>
+				<input type="text"  name="loc_id" class="input-fields">
+		
+				<label for="year" class="input-labels"><b>Year:</b></label>
+				<input type="number"  name="year" class="input-fields" >
+		
+				<label for="district" class="input-labels"><b>District:</b></label>
+				<input type="text"  name="district" class="input-fields" >
+		
+				<label for="area" class="input-labels"><b>Area:</b></label>
+				<input type="text"  name="area" class="input-fields">
+		
+				<label for="production" class="input-labels"><b>Production:</b></label>
+				<input type="text"  name="production" class="input-fields" >
+		
+				<button type="submit" class="submit-button">Submit</button>
+		  </form>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+      </div>
+    </div>
 
         <!-- Table 1 (Sugarcane in District) -->
         <form action="/sugarcane-in-district" id="sugarcane-in-district" method="POST" class="input-form">
@@ -1331,7 +1415,23 @@
     </footer>
 
     <script>
-        function hamburgerMenuShowFunction() {
+        const selected = document.querySelector(".selected");
+		const optionsContainer = document.querySelector(".options-container");
+
+		const optionsList = document.querySelectorAll(".option");
+
+		selected.addEventListener("click", () => {
+			optionsContainer.classList.toggle("active");
+		});
+
+		optionsList.forEach(o => {
+			o.addEventListener("click", () => {
+				selected.innerHTML = o.querySelector("label").innerHTML;
+				optionsContainer.classList.remove("active");
+			});
+		});
+		
+		function hamburgerMenuShowFunction() {
             console.log("called")
             var x =document.getElementById("navbarList");
             if (x.style.display === "block") {
