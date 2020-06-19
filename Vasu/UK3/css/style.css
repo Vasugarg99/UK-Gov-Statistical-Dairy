@@ -10,8 +10,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.district{
-}
 .select-box {
   display: flex;
   width: 450px;
